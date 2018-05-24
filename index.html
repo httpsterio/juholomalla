@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Juho on lomalla</title>
+    <meta name="description" content="Juho on lomalla">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-color: pink;
+            background-image: url('juho.gif');
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: center top;
+            height: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/howler/2.0.12/howler.core.min.js"></script>
+    <script>
+        var sound = new Howl({
+            src: ['juho.webm', 'juho.mp3'],
+            autoplay: true,
+            loop: true,
+            volume: 1,
+            onend: function () {
+                console.log('Finished!');
+            }
+        });
+    </script>
+</body>
+
+</html>
